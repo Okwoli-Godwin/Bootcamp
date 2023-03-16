@@ -45,7 +45,7 @@ const Left = styled.div`
 const Wrapper = styled.div`
     width: 90%;
     display: flex;
-    background-color: red;
+    /* background-color: red; */
 `
 const Container = styled.div`
     width: 100%;
