@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import img from "../Assets/meat.png"
 import img2 from "../Assets/vige.png"
 import img3 from "../Assets/orang.png"
+import "app.css"
 import {BsFillCalendarWeekFill, BsArrowRightShort} from "react-icons/bs"
 
 const Heroblog = () => {
