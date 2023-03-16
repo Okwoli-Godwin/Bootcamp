@@ -6,19 +6,23 @@ import Allroutes from './Components/Allroutes'
 // import Signup from './Components/Signup/Signup'
 // import TalkToUs from './Components/ContactUs/TalkToUs'
 // import Blog from './Components/Blog/Blog'
+// import OurValues from './Components/OurValues/OurValues'
 
 const App = () => {
   return (
     <div>
       <Allroutes />
-      {/* <Blog />
+      {/* <br /> <br /> <br />
+      <Blog />
       <br /><br />
       <Signup />
       <br /> <br />
       <ContactUs />
       <TalkToUs />
-      <br /> <br /> <br /> */}
-      {/* <Signin /> */}
+      <br /> <br /> <br />
+      <Signin />
+      <br /> <br /> <br />
+      <OurValues /> */}
     </div>
   )
 }
