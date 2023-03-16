@@ -34,7 +34,9 @@ const Header = () => {
                 <NavLink to="/who we are" style={{textDecoration: "none"}}>
                     <Nav>Who we are</Nav>
                 </NavLink>
-                <Nav>Blog</Nav>
+                <NavLink to="/blog" style={{textDecoration: "none"}}>
+                    <Nav>Blog</Nav>
+                </NavLink>
                 <Nav>Contact us</Nav>
             </Navhold>
             <Right>
@@ -62,8 +64,12 @@ const Header = () => {
                 <NavLink to="/who we are" style={{textDecoration: "none"}}>
                     <Nav>Who we are</Nav>
                 </NavLink>
-                <Nav>Blog</Nav>
-                <Nav>Contact us</Nav>
+                    <NavLink to="/blog" style={{textDecoration: "none"}}>
+                    <Nav>Blog</Nav>      
+                </NavLink>
+                    <NavLink to="/contact" style={{textDecoration: "none"}}>
+                    <Nav>Contact us</Nav>
+                </NavLink>
             </Navhold>
             <Right>
                 <NavLink to="/signin" style={{textDecoration: "none"}}>

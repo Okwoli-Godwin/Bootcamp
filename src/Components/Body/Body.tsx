@@ -4,9 +4,9 @@ import img from "../Assets/agro2.jpg"
 import img2 from "../Assets/agro3.jpg"
 import img3 from "../Assets/agro5.jpg"
 import Head from '../Head/Head'
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import Header from '../Header/Header'
 
 const Body = () => {
@@ -23,7 +23,7 @@ const Body = () => {
 	};
   return (
     <div style={{overflow: "hidden"}}>
-        {/* <Slider {...settings}> */}
+        <Slider {...settings}>
             <Container>
                 <Box>
                     
@@ -61,7 +61,7 @@ const Body = () => {
                     <Circle3></Circle3>
                 </Wrapper>
             </Container3>
-        {/* </Slider> */}
+        </Slider>
     </div>
   )
 }
@@ -96,7 +96,7 @@ const Circle2 = styled.div`
     width: 125px;
     height: 125px;
     border-radius: 100px;
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     left: 260px;
     top: 220px;
@@ -109,7 +109,7 @@ const Circle = styled.div`
     width: 145px;
     height: 145px;
     border-radius: 100px;
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     left: 100px;
     top: 220px;
