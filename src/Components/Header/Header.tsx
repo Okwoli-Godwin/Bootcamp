@@ -63,7 +63,9 @@ const Header = () => {
                     <Nav>Who we are</Nav>
                 </NavLink>
                 <Nav>Blog</Nav>
-                <Nav>Contact us</Nav>
+                    <NavLink to="/contact" style={{textDecoration: "none"}}>
+                    <Nav>Contact us</Nav>
+                </NavLink>
             </Navhold>
             <Right>
                 <NavLink to="/signin" style={{textDecoration: "none"}}>

@@ -5,6 +5,7 @@ import Signup from "./Signup/Signup";
 import Homescreen from "./Homescreen/Homescreen";
 import Dashboard from "./Dashboard/Dashboard";
 import Signin from "./Signin/Signin";
+import Contact from "./Contact/Contact"
 
 const Allroutes = () => {
   let element = useRoutes([
@@ -28,6 +29,10 @@ const Allroutes = () => {
       path: "/signin",
       element: <Signin />
     },
+    {
+      path: "/contact",
+      element: <Contact />
+    }
   ]);
   return element;
 };
