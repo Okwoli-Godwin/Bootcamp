@@ -1,10 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import {BiCheckbox} from 'react-icons/bi'
+import Header from '../Header/Header'
 
 const TalkToUs = () => {
   return (
-    <Container>
+      <Container>
+          <Header />
+          <br />
+          <br />
+          <br />
+          <br />
         <h1>Talk to us</h1>
         <FormCard>
             <ItemHold>
@@ -70,7 +76,6 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     padding-bottom: 40px;
   

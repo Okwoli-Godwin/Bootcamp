@@ -6,6 +6,7 @@ import Homescreen from "./Homescreen/Homescreen";
 import Dashboard from "./Dashboard/Dashboard";
 import Signin from "./Signin/Signin";
 import Contact from "./Contact/Contact"
+import Blog from "./Blog/Blog"
 
 const Allroutes = () => {
   let element = useRoutes([
@@ -32,6 +33,10 @@ const Allroutes = () => {
     {
       path: "/contact",
       element: <Contact />
+    },
+    {
+      path: "/blog",
+      element: <Blog />
     }
   ]);
   return element;
