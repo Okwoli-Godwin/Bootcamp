@@ -4,9 +4,9 @@ import img from "../Assets/pep.jpg"
 import img2 from "../Assets/animal.jpg"
 import img3 from "../Assets/cooking.jpg"
 import Head from '../Head/Head'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 import Header from '../Header/Header'
 
 const Prodhero = () => {
@@ -23,7 +23,7 @@ const Prodhero = () => {
 	};
   return (
     <div style={{overflow: "hidden"}}>
-        <Slider {...settings}>
+        {/* <Slider {...settings}> */}
             <Container>
                 
                 <Box>
@@ -55,7 +55,7 @@ const Prodhero = () => {
                     </Card>
                 </Box>
             </Container3>
-        </Slider>
+        {/* </Slider> */}
     </div>
   )
 }
