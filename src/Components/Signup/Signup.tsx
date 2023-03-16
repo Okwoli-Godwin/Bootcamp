@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-// import pix from "../Assets/agric-removebg-preview.png";
-
+import { NavLink } from "react-router-dom";
 import pix from "../Assets/agric-removebg-preview.png";
 import image from "../Assets/handrm.png";
 const Signup = () => {
@@ -39,6 +38,7 @@ const Signup = () => {
             }}
           />
         </Left>
+
         <Right>
           <Top>
             <img src={pix} alt="" />
@@ -50,14 +50,27 @@ const Signup = () => {
             <Logo></Logo>
             <input placeholder="Enter name" />
           </Holdinp>
+
           <Holdinp style={{ marginTop: "10px" }}>
             <Logo></Logo>
             <input placeholder="Enter email" />
           </Holdinp>
+
           <Holdinp style={{ marginTop: "10px" }}>
             <Logo></Logo>
             <input placeholder="Enter password" />
           </Holdinp>
+
+          <Holdinp style={{ marginTop: "10px" }}>
+            <Logo></Logo>
+            <input placeholder="Confirm password" />
+          </Holdinp>
+
+          <Holdinp style={{ marginTop: "10px" }}>
+            <Logo></Logo>
+            <input placeholder="Enter your Location" />
+          </Holdinp>
+
           <Button>Sign up</Button>
         </Right>
       </Card>
@@ -164,7 +177,7 @@ const Left = styled.div`
     margin-left: 22px;
   }
 `;
-const Right = styled.div`
+const Right = styled.form`
   width: 300px;
   height: 380px;
   /* background-color: red; */
@@ -194,7 +207,7 @@ const Container = styled.div`
 `;
 const Card = styled.div`
   width: 700px;
-  height: 380px;
+  height: 430px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   background-color: white;
