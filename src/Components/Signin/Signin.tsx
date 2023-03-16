@@ -64,7 +64,9 @@ const Signin = () => {
             <input placeholder="Enter password" />
           </Holdinp>
 
-          <Button>Sign up</Button>
+          <NavLink to="/Dashboard" style={{textDecoration: "none"}}>
+            <Button>Sign up</Button>
+          </NavLink>
         </Right>
       </Card>
     </Container>
