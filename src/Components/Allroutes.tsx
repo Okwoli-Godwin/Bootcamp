@@ -4,6 +4,7 @@ import About from "./About/About"
 import Signup from "./Signup/Signup";
 import Homescreen from "./Homescreen/Homescreen";
 import Dashboard from "./Dashboard/Dashboard";
+import Signin from "./Signin/Signin";
 
 const Allroutes = () => {
   let element = useRoutes([
@@ -22,6 +23,10 @@ const Allroutes = () => {
     {
       path: "/signup",
       element: <Signup />,
+    },
+    {
+      path: "/signin",
+      element: <Signin />
     },
   ]);
   return element;

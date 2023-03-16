@@ -38,7 +38,7 @@ const Header = () => {
                 <Nav>Contact us</Nav>
             </Navhold>
             <Right>
-                <NavLink to="/Dashboard">
+                <NavLink to="/signin" style={{textDecoration: "none"}}>
                     <Button>
                     Sign in
                 </Button>     
@@ -66,9 +66,11 @@ const Header = () => {
                 <Nav>Contact us</Nav>
             </Navhold>
             <Right>
-                <Button>
+                <NavLink to="/signin" style={{textDecoration: "none"}}>
+                     <Button>
                     Sign in
                 </Button>
+                </NavLink>
                 <Icon><AiOutlineShoppingCart />
                     <Circle>0</Circle>
                 </Icon>
@@ -104,10 +106,10 @@ align-items: center;
 cursor: pointer;
 position: relative;
 `
-const Button = styled.button`
+const Button = styled.div`
     border: none;
     outline: none;
-    height: 50%;
+    height: 40px;
     width: 120px;
     display: flex;
     justify-content: center;
