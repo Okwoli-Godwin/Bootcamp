@@ -1,8 +1,11 @@
 import React from 'react'
+import Allroutes from './Components/Allroutes'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Allroutes />
+    </div>
   )
 }
 
