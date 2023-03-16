@@ -4,9 +4,9 @@ import img from "../Assets/farmers.jpg"
 import img2 from "../Assets/pine.jpg"
 import img3 from "../Assets/yam.jpg"
 import img4 from "../Assets/vega.jpg"
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 const Productdisplay = () => {
     const settings = {
@@ -24,7 +24,7 @@ const Productdisplay = () => {
       <Container>
           <Wrapper>
               <div style={{width: "63%"}}>
-                  <Slider {...settings}>
+                  {/* <Slider {...settings}> */}
                   <Right>
                     <Box>
                       <Text><h3>100% genuine Products</h3></Text>
@@ -40,7 +40,7 @@ const Productdisplay = () => {
                       <Button>Shop now</Button>
                   </Box>
                       </Right2>
-                  </Slider>
+                  {/* </Slider> */}
               </div>
 
               <Left>
