@@ -2,13 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 // import img from "../Assets/person.png"
 import Cards from './Cards'
+import Sales from './Sales'
 import Todo from './Todo'
 
 const Home = () => {
   return (
     <Container>
         <Wrapper>
-            <Cards />
+              <Cards />
+              <Sales />
         </Wrapper>
     </Container>
   )
@@ -62,5 +64,6 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     margin-left: 260px;
+    overflow: hidden;
     /* background-color: red; */
 `
