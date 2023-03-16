@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+// import pix from "../Assets/agric-removebg-preview.png";
+
 import pix from "../Assets/agric-removebg-preview.png";
 import image from "../Assets/handrm.png";
 const Signup = () => {
+
   return (
     <Container>
       <Card>
