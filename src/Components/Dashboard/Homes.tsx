@@ -2,13 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 // import img from "../Assets/person.png"
 import Cards from './Cards'
+import Sales from './Sales'
 import Todo from './Todo'
 
 const Home = () => {
   return (
     <Container>
         <Wrapper>
-            <Cards />
+              <Cards />
+              <Sales />
         </Wrapper>
     </Container>
   )
