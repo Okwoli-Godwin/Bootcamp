@@ -1,48 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
-// import pix from "../Assets/agric-removebg-preview.png";
-
-import pix from "../Assets/agric-removebg-preview.png";
-import image from "../Assets/handrm.png";
+import React from 'react'
+import styled from "styled-components"
+import img from "../Assets/farmers.jpg"
 
 const Signin = () => {
-
   return (
     <Container>
       <Card>
-        <Left>
-          <First>
-            <div>
-              <img src={pix} alt="" />
-            </div>
-
-            <h3>
-              We are here <br />
-              to help farmers
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-              iure sint, excepturi earum corporis ut quaerat.
-            </p>
-            <p style={{ marginTop: "20px", fontSize: "13px" }}>
-              Already have an account?
-              <span style={{ fontSize: "14px" }}>Sign in</span>
-            </p>
-          </First>
-
-          <img
-            src={image}
-            style={{
-              position: "absolute",
-              height: "360px",
-              bottom: "25%",
-              right: "1px",
-            }}
-          />
-        </Left>
-
         <Right>
+ saviobranch
+          <Img src={img} />
           <Top>
             <img src={pix} alt="" />
           </Top>
@@ -63,146 +29,93 @@ const Signin = () => {
             <Logo></Logo>
             <input placeholder="Enter password" />
           </Holdinp>
-
-<<<<<<< HEAD
           <Button>Sign up</Button>
-=======
           <NavLink to="/Dashboard" style={{textDecoration: "none"}}>
             <Button>Sign up</Button>
           </NavLink>
->>>>>>> 92d43597222cefe7aaf45515a50776fd46dfad48
         </Right>
+        <Left>
+          <Top><h2>AGro-Allied</h2></Top>
+          <Input type="text" placeholder='Enter your name' />
+          <Input type="email" placeholder='Enter your Email'/>
+          <Input type="number" placeholder='Enter your Phone Number' />
+          <Input type="number" placeholder='Enter your Bvn Number' />
+          <Button>Sign up</Button>
+        </Left>
       </Card>
     </Container>
-  );
-};
+  )
+}
 
-export default Signin;
-
-const Sec = styled.div`
-  width: 200px;
-  /* background-color: blue; */
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-`;
-
-const First = styled.div`
-  /* background-color: red; */
-  /* width: 240px; */
-`;
-
-const Button = styled.button`
-  width: 75%;
-  height: 30px;
-  background-color: #039566;
-  border: 0;
-  border-radius: 20px;
-  color: white;
-  margin-left: 40px;
-  margin-top: 20px;
-
-  :hover {
-    transform: scale(0.99);
-    cursor: pointer;
-  }
-`;
-
-const Holdinp = styled.div`
-  margin-left: 40px;
-  width: 75%;
-  height: 30px;
-  border: 1px solid #d5d5b3;
-  border-radius: 10px;
-  margin-top: 20px;
-  display: flex;
-  align-items: center;
-  input {
-    flex: 1;
-    outline: 0;
-    border: 0;
-    padding-left: 10px;
-    ::placeholder {
-      font-size: 11px;
-    }
-  }
-`;
-const Logo = styled.div``;
-
-const Top = styled.div`
+export default Signin
+const Img = styled.img`
   width: 100%;
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid gray;
-
-  img {
-    height: 50px;
-  }
-`;
-
-const Left = styled.div`
-  width: 400px;
   height: 100%;
-  background-image: linear-gradient(to right, #f7f9f6, #e5ecdc);
+  object-fit: cover;
+`
+const Button = styled.button`
+  width: 160px;
+  height: 45px;
   display: flex;
-  position: relative;
-
-  span {
-    color: #039566;
+  justify-content: center;
+  border: none;
+  outline: none;
+  align-items: center;
+  color: #fff;
+  background-color: #03993f;
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+  border-radius: 50px;
+  margin-top: 20px;
+  :hover{
+    background-color: #fff;
+    color: #03993f;
+    border: 1px solid #03993f;
   }
-
-  img {
-    height: 55px;
-    margin-left: 20px;
-    margin-top: 50px;
+`
+const Input = styled.input`
+  width: 70%;
+  height: 40px;
+  margin-bottom: 15px;
+  border: 1px solid #f1f1f1;
+  outline: none;
+  border-radius: 3px;
+  padding-left: 10px;
+  margin-top: 15px;
+`
+const Top = styled.div`
+  h2{
+    color: #03993f;
   }
-  h3 {
-    color: #827b40;
-    margin: 0;
-    margin-top: 30px;
-    margin-left: 20px;
-    font-size: 22px;
-  }
-  p {
-    margin: 0;
-    margin-top: 13px;
-    width: 60%;
-    font-size: 11px;
-    margin-left: 22px;
-  }
-`;
-const Right = styled.form`
-  width: 300px;
-  height: 380px;
-  /* background-color: red; */
-
-  h4 {
-    margin: 0;
-    margin-left: 40px;
-    margin-top: 30px;
-  }
-
-  p {
-    margin: 0;
-    margin-left: 40px;
-    color: darkgray;
-    margin-top: 3px;
-    font-size: 12px;
-  }
-`;
+`
+const Left = styled.div`
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+const Right = styled.div`
+  width: 50%;
+  display: flex;
+`
+const Card = styled.div`
+  width: 800px;
+  height: 500px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+`
 
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
   display: flex;
-  align-items: center;
+  height: 100vh;
   justify-content: center;
-<<<<<<< HEAD
+
+  align-items: center;
+`
+
   background-color: #039566;
 `;
 const Card = styled.div`
@@ -210,9 +123,6 @@ const Card = styled.div`
   height: 380px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
-  background-color: white;
-`;
-=======
   background-color: #fff;
 `;
 const Card = styled.div`
@@ -222,4 +132,4 @@ const Card = styled.div`
   display: flex;
   background-color: white;
 `;
->>>>>>> 92d43597222cefe7aaf45515a50776fd46dfad48
+
