@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import styled from "styled-components"
 import img from "../Assets/farmers.jpg"
 
@@ -12,10 +13,12 @@ const Signin = () => {
         <Left>
           <Top><h2>AGro-Allied</h2></Top>
           <Input type="text" placeholder='Enter your name' />
-          <Input type="email" placeholder='Enter your Email'/>
-          <Input type="number" placeholder='Enter your Phone Number' />
-          <Input type="number" placeholder='Enter your Bvn Number' />
-          <Button>Sign up</Button>
+          <Input type="email" placeholder='Enter your Email' />
+          <Input type="password" placeholder='Enter your password'/>
+          <Button>Sign in</Button>
+          <NavLink to="/signup" style={{textDecoration: "none"}}>
+              <p>Dont have an account? <span>Signup</span></p>
+          </NavLink>
         </Left>
       </Card>
     </Container>
@@ -51,7 +54,7 @@ const Button = styled.button`
 const Input = styled.input`
   width: 70%;
   height: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: 1px solid #f1f1f1;
   outline: none;
   border-radius: 3px;
@@ -68,6 +71,17 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  span{
+    color: #03993f;
+  }
+  p{
+    color: #c2c2c2;
+    margin: 0;
+    margin-top: 7px;
+    font-size: 14px;
+    cursor: pointer;
+  }
 `
 const Right = styled.div`
   width: 50%;
@@ -75,7 +89,7 @@ const Right = styled.div`
 `
 const Card = styled.div`
   width: 800px;
-  height: 500px;
+  height: 600px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
   overflow: hidden;
