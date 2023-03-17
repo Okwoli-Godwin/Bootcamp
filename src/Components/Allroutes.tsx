@@ -12,6 +12,7 @@ import ProductUpload from "./ProductDashboard/ProductUpload";
 import Customerpage from "./Customerdash/Customerpage";
 import Order from "./Orderdashboard/Order";
 
+
 const Allroutes = () => {
   let element = useRoutes([
     {
@@ -45,7 +46,7 @@ const Allroutes = () => {
       children: [
         {
           index: true,
-          element: <Customerpage />
+          element: <Customerpage/>
         }
       ]
     },
