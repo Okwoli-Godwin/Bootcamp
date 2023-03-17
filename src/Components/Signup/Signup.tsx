@@ -18,7 +18,9 @@ const Signin = () => {
           <Input type="password" placeholder='Enter your password' />
           <Input type="password" placeholder='Confirm password' />
           <Input type="//#region " placeholder='Enter your Bvn Number' />
-          <Button>Sign up</Button>
+          <NavLink to="/Dashboard" style={{textDecoration: "none"}}>
+            <Button>Sign up</Button>
+          </NavLink>
           <NavLink to="/signin" style={{textDecoration: "none"}}>
               <p>Already have an account? <span>Signin</span></p>
           </NavLink>

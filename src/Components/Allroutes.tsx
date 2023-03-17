@@ -8,6 +8,9 @@ import Signin from "./Signin/Signin";
 import Contact from "./Contact/Contact"
 import Blog from "./Blog/Blog"
 import Product from "./Dashboard/Product";
+import ProductUpload from "./ProductDashboard/ProductUpload";
+import Customerpage from "./Customerdash/Customerpage";
+import Order from "./Orderdashboard/Order";
 
 const Allroutes = () => {
   let element = useRoutes([
@@ -21,7 +24,39 @@ const Allroutes = () => {
     },
     {
       path: "/Dashboard",
-      element: <Dashboard />
+      children: [
+        {
+          index: true,
+          element: <Dashboard />
+        }
+      ]
+    },
+    {
+      path: "productpage",
+      children: [
+        {
+          index: true,
+          element: <ProductUpload />
+        }
+      ]
+    },
+    {
+      path: "Customerpage",
+      children: [
+        {
+          index: true,
+          element: <Customerpage />
+        }
+      ]
+    },
+    {
+      path: "orderpage",
+      children: [
+        {
+          index: true,
+          element: <Order />
+        }
+      ]
     },
     {
       path: "/signup",
@@ -39,10 +74,6 @@ const Allroutes = () => {
       path: "/blog",
       element: <Blog />
     },
-    {
-      path: "/dashproduct",
-      element: <Product />
-    }
   ]);
   return element;
 };

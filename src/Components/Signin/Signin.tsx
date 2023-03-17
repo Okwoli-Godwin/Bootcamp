@@ -15,7 +15,9 @@ const Signin = () => {
           <Input type="text" placeholder='Enter your name' />
           <Input type="email" placeholder='Enter your Email' />
           <Input type="password" placeholder='Enter your password'/>
-          <Button>Sign in</Button>
+          <NavLink to="/Dashboard" style={{textDecoration: "none"}}>
+            <Button>Sign in</Button>
+          </NavLink>
           <NavLink to="/signup" style={{textDecoration: "none"}}>
               <p>Dont have an account? <span>Signup</span></p>
           </NavLink>

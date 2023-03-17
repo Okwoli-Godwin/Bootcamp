@@ -19,7 +19,7 @@ const SideBar = () => {
             <NavLink to="/dashboard" style={({isActive}) => {
                 return {
                     textDecoration: isActive ? "none" : "none",
-                    backgroundColor: isActive ? "#fff" : "#062863",
+                    backgroundColor: isActive ? "#fff" : "",
                     borderTopLeftRadius: isActive ? "50px" : "none",
                     borderBottomLeftRadius:isActive ? "50px" : "none",
                     color: isActive ? "#2d3748" : "#fff",
@@ -32,13 +32,12 @@ const SideBar = () => {
         
             <Home2>
             <Icon2><FiUpload /></Icon2>
-            <NavLink to="/product" style={({isActive}) => {
+            <NavLink to="/productpage" style={({isActive}) => {
                 return {
                     textDecoration: isActive ? "none" : "none",
                     backgroundColor: isActive ? "#fff" : "",
-                    borderTopLeftRadius: isActive ? "10px" : "none",
-                    borderTopRightRadius: isActive ? "10px" : "none",
-                    borderBottomRightRadius:isActive ? "10px" : "none",
+                    borderTopLeftRadius: isActive ? "50px" : "none",
+                    borderBottomLeftRadius:isActive ? "50px" : "none",
                     color: isActive ? "#2d3748" : "#fff",
                     marginLeft: isActive ? "15px" : "none"
                 }
@@ -49,7 +48,18 @@ const SideBar = () => {
         
         <Home2>
             <Icon2><IoMdPerson /></Icon2>
-            <Text3>Customers</Text3>
+              <NavLink to="/Customerpage" style={({isActive}) => {
+                return {
+                    textDecoration: isActive ? "none" : "none",
+                    backgroundColor: isActive ? "#fff" : "",
+                    borderTopLeftRadius: isActive ? "50px" : "none",
+                    borderBottomLeftRadius:isActive ? "50px" : "none",
+                    color: isActive ? "#2d3748" : "#fff",
+                    marginLeft: isActive ? "15px" : "none"
+                }
+            }}>
+                  <Text3>Customers</Text3>
+            </NavLink>
         </Home2>
         <Home2>
             <Icon2><IoMdPerson /></Icon2>
@@ -57,7 +67,18 @@ const SideBar = () => {
           </Home2>
           <Home2>
             <Icon2><IoMdPerson /></Icon2>
-            <Text4>Orders</Text4>
+              <NavLink to="/orderpage" style={({isActive}) => {
+                return {
+                    textDecoration: isActive ? "none" : "none",
+                    backgroundColor: isActive ? "#fff" : "",
+                    borderTopLeftRadius: isActive ? "50px" : "none",
+                    borderBottomLeftRadius:isActive ? "50px" : "none",
+                    color: isActive ? "#2d3748" : "#fff",
+                    marginLeft: isActive ? "15px" : "none"
+                }
+            }}>
+                   <Text5>Orders</Text5>
+           </NavLink>
         </Home2>
 
         <Power>
@@ -73,6 +94,18 @@ const Power = styled.div`
     width: 100%;
     display: flex;
     margin-top: 195px;  
+`
+const Text5 = styled.div`
+    font-size: 17px;
+    font-family: U8,sans-serif;
+    cursor: pointer;
+    /* color: #fff; */
+    align-items: center;
+    display: flex;
+    margin-left: 30px;
+    width: 120px;
+    height: 40px;
+    /* background-color: white; */
 `
 const Text4 = styled.div`
     font-size: 17px;
@@ -90,7 +123,7 @@ const Text3 = styled.div`
     font-size: 17px;
     font-family: U8,sans-serif;
     cursor: pointer;
-    color: #fff;
+    /* color: #fff; */
     align-items: center;
     display: flex;
     margin-left: 30px;
