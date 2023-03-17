@@ -32,7 +32,7 @@ const SideBar = () => {
         
             <Home2>
             <Icon2><FiUpload /></Icon2>
-            <NavLink to="/savings" style={({isActive}) => {
+            <NavLink to="/product" style={({isActive}) => {
                 return {
                     textDecoration: isActive ? "none" : "none",
                     backgroundColor: isActive ? "#fff" : "",

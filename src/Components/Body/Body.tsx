@@ -96,7 +96,7 @@ const Circle2 = styled.div`
     width: 125px;
     height: 125px;
     border-radius: 100px;
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     left: 260px;
     top: 220px;
@@ -109,7 +109,7 @@ const Circle = styled.div`
     width: 145px;
     height: 145px;
     border-radius: 100px;
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     left: 100px;
     top: 220px;

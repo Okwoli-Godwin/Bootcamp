@@ -64,7 +64,13 @@ const Signin = () => {
             <input placeholder="Enter password" />
           </Holdinp>
 
+<<<<<<< HEAD
           <Button>Sign up</Button>
+=======
+          <NavLink to="/Dashboard" style={{textDecoration: "none"}}>
+            <Button>Sign up</Button>
+          </NavLink>
+>>>>>>> 92d43597222cefe7aaf45515a50776fd46dfad48
         </Right>
       </Card>
     </Container>
@@ -196,6 +202,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   background-color: #039566;
 `;
 const Card = styled.div`
@@ -205,3 +212,14 @@ const Card = styled.div`
   display: flex;
   background-color: white;
 `;
+=======
+  background-color: #fff;
+`;
+const Card = styled.div`
+  width: 850px;
+  height: 480px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  background-color: white;
+`;
+>>>>>>> 92d43597222cefe7aaf45515a50776fd46dfad48
