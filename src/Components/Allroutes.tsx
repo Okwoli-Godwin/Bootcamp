@@ -4,6 +4,8 @@ import About from "./About/About"
 import Signup from "./Signup/Signup";
 import Homescreen from "./Homescreen/Homescreen";
 import Dashboard from "./Dashboard/Dashboard";
+import Admin from "./Dashboard/AdminDash/Admin";
+
 
 const Allroutes = () => {
   let element = useRoutes([
@@ -18,6 +20,10 @@ const Allroutes = () => {
     {
       path: "/Dashboard",
       element: <Dashboard />
+    },
+    {
+      path:"/adminDashboard",
+  element:<Admin/>
     },
     {
       path: "/signup",
