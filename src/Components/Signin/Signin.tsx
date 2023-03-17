@@ -7,7 +7,32 @@ const Signin = () => {
     <Container>
       <Card>
         <Right>
+ saviobranch
           <Img src={img} />
+          <Top>
+            <img src={pix} alt="" />
+          </Top>
+          <h4>Signup</h4>
+          <p>Enter your information</p>
+
+          <Holdinp>
+            <Logo></Logo>
+            <input placeholder="Enter name" />
+          </Holdinp>
+
+          <Holdinp style={{ marginTop: "10px" }}>
+            <Logo></Logo>
+            <input placeholder="Enter email" />
+          </Holdinp>
+
+          <Holdinp style={{ marginTop: "10px" }}>
+            <Logo></Logo>
+            <input placeholder="Enter password" />
+          </Holdinp>
+          <Button>Sign up</Button>
+          <NavLink to="/Dashboard" style={{textDecoration: "none"}}>
+            <Button>Sign up</Button>
+          </NavLink>
         </Right>
         <Left>
           <Top><h2>AGro-Allied</h2></Top>
@@ -87,5 +112,24 @@ const Container = styled.div`
   display: flex;
   height: 100vh;
   justify-content: center;
+
   align-items: center;
 `
+
+  background-color: #039566;
+`;
+const Card = styled.div`
+  width: 700px;
+  height: 380px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  background-color: #fff;
+`;
+const Card = styled.div`
+  width: 850px;
+  height: 480px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  background-color: white;
+`;
+
