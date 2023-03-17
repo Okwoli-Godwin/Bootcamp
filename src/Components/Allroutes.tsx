@@ -7,6 +7,7 @@ import Dashboard from "./Dashboard/Dashboard";
 import Signin from "./Signin/Signin";
 import Contact from "./Contact/Contact"
 import Blog from "./Blog/Blog"
+import Product from "./Dashboard/Product";
 
 const Allroutes = () => {
   let element = useRoutes([
@@ -37,6 +38,10 @@ const Allroutes = () => {
     {
       path: "/blog",
       element: <Blog />
+    },
+    {
+      path: "/dashproduct",
+      element: <Product />
     }
   ]);
   return element;
