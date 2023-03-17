@@ -17,53 +17,11 @@ const Recent = () => {
                   <Navs>Status</Navs>
             </Head>
               <Head2>
-              <Hold>
-                  <Navs2>#Kz025417</Navs2>
-                  <Navs>Customer</Navs>
-                  <Navs>Product</Navs>
-                  <Navs>Amount</Navs>
-                  <Navs>Status</Navs>
-              </Hold>
+              
 
-              <Hold>
-                  <Navs2>#Kz025417</Navs2>
-                  <Navs>Customer</Navs>
-                  <Navs>Product</Navs>
-                  <Navs>Amount</Navs>
-                  <Navs>Status</Navs>
-              </Hold>
+             
 
-              <Hold>
-                  <Navs2>#Kz025417</Navs2>
-                  <Navs>Customer</Navs>
-                  <Navs>Product</Navs>
-                  <Navs>Amount</Navs>
-                  <Navs>Status</Navs>
-              </Hold>
-
-              <Hold>
-                  <Navs2>#Kz025417</Navs2>
-                  <Navs>Customer</Navs>
-                  <Navs>Product</Navs>
-                  <Navs>Amount</Navs>
-                  <Navs>Status</Navs>
-              </Hold>
-
-              <Hold>
-                  <Navs2>#Kz025417</Navs2>
-                  <Navs>Customer</Navs>
-                  <Navs>Product</Navs>
-                  <Navs>Amount</Navs>
-                  <Navs>Status</Navs>
-              </Hold>
-
-              <Hold>
-                  <Navs2>#Kz025417</Navs2>
-                  <Navs>Customer</Navs>
-                  <Navs>Product</Navs>
-                  <Navs>Amount</Navs>
-                  <Navs>Status</Navs>
-              </Hold>
+              
           </Head2>
     </Container>
   )
