@@ -7,7 +7,7 @@ import {IoIosRocket, IoMdPerson} from "react-icons/io"
 import { NavLink } from 'react-router-dom'
 import {MdDashboard} from "react-icons/md"
 
-const SideBar = () => {
+const Side = () => {
   return (
     <Container>
         <Top>
@@ -18,12 +18,12 @@ const SideBar = () => {
             <Icon2><MdDashboard /></Icon2>
             <NavLink to="/dashboard" style={({isActive}) => {
                 return {
-                    textDecoration: isActive ? "none" : "none",
-                    backgroundColor: isActive ? "#fff" : "",
-                    borderTopLeftRadius: isActive ? "50px" : "none",
-                    borderBottomLeftRadius:isActive ? "50px" : "none",
-                    color: isActive ? "#2d3748" : "#fff",
-                    marginLeft: isActive ? "15px" : "none"
+                    textDecoration: !isActive ? "none" : "none",
+                    backgroundColor: !isActive ? "#fff" : "#062863",
+                    borderTopLeftRadius: !isActive ? "50px" : "none",
+                    borderBottomLeftRadius:!isActive ? "50px" : "none",
+                    color: !isActive ? "#2d3748" : "#fff",
+                    marginLeft: !isActive ? "15px" : "none"
                 }
             }}>
                 <Text1>Dashboard</Text1>
@@ -32,12 +32,13 @@ const SideBar = () => {
         
             <Home2>
             <Icon2><FiUpload /></Icon2>
-            <NavLink to="/productpage" style={({isActive}) => {
+            <NavLink to="/savings" style={({isActive}) => {
                 return {
                     textDecoration: isActive ? "none" : "none",
                     backgroundColor: isActive ? "#fff" : "",
-                    borderTopLeftRadius: isActive ? "50px" : "none",
-                    borderBottomLeftRadius:isActive ? "50px" : "none",
+                    borderTopLeftRadius: isActive ? "10px" : "none",
+                    borderTopRightRadius: isActive ? "10px" : "none",
+                    borderBottomRightRadius:isActive ? "10px" : "none",
                     color: isActive ? "#2d3748" : "#fff",
                     marginLeft: isActive ? "15px" : "none"
                 }
@@ -48,18 +49,7 @@ const SideBar = () => {
         
         <Home2>
             <Icon2><IoMdPerson /></Icon2>
-              <NavLink to="/Customerpage" style={({isActive}) => {
-                return {
-                    textDecoration: isActive ? "none" : "none",
-                    backgroundColor: isActive ? "#fff" : "",
-                    borderTopLeftRadius: isActive ? "50px" : "none",
-                    borderBottomLeftRadius:isActive ? "50px" : "none",
-                    color: isActive ? "#2d3748" : "#fff",
-                    marginLeft: isActive ? "15px" : "none"
-                }
-            }}>
-                  <Text3>Customers</Text3>
-            </NavLink>
+            <Text3>Customers</Text3>
         </Home2>
         <Home2>
             <Icon2><IoMdPerson /></Icon2>
@@ -67,18 +57,7 @@ const SideBar = () => {
           </Home2>
           <Home2>
             <Icon2><IoMdPerson /></Icon2>
-              <NavLink to="/orderpage" style={({isActive}) => {
-                return {
-                    textDecoration: isActive ? "none" : "none",
-                    backgroundColor: isActive ? "#fff" : "",
-                    borderTopLeftRadius: isActive ? "50px" : "none",
-                    borderBottomLeftRadius:isActive ? "50px" : "none",
-                    color: isActive ? "#2d3748" : "#fff",
-                    marginLeft: isActive ? "15px" : "none"
-                }
-            }}>
-                   <Text5>Orders</Text5>
-           </NavLink>
+            <Text4>Orders</Text4>
         </Home2>
 
         <Power>
@@ -89,23 +68,11 @@ const SideBar = () => {
   )
 }
 
-export default SideBar
+export default Side
 const Power = styled.div`
     width: 100%;
     display: flex;
     margin-top: 195px;  
-`
-const Text5 = styled.div`
-    font-size: 17px;
-    font-family: U8,sans-serif;
-    cursor: pointer;
-    /* color: #fff; */
-    align-items: center;
-    display: flex;
-    margin-left: 30px;
-    width: 120px;
-    height: 40px;
-    /* background-color: white; */
 `
 const Text4 = styled.div`
     font-size: 17px;
@@ -123,7 +90,7 @@ const Text3 = styled.div`
     font-size: 17px;
     font-family: U8,sans-serif;
     cursor: pointer;
-    /* color: #fff; */
+    color: #fff;
     align-items: center;
     display: flex;
     margin-left: 30px;

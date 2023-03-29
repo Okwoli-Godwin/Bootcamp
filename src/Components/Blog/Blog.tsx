@@ -54,6 +54,7 @@ const Blog = () => {
 
               <Card>
                   <Up>
+
                       <Img src={ img8} />
                   </Up>
                   <Down>
@@ -124,6 +125,7 @@ const Blog = () => {
 
               <Card>
                   <Up>
+
                       <Img  src={ img3}/>
                   </Up>
                   <Down>
@@ -229,3 +231,4 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
 `
+
